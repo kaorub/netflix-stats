@@ -1,0 +1,5 @@
+.env
+.env.heroku
+node_modules
+.public
+.src

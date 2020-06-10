@@ -1,0 +1,19 @@
+{
+  "name": "netflix-stats",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node --optimize_for_size --max_old_space_size=920 --gc_interval=100 index.js",
+    "basic": "node --optimize_for_size --max_old_space_size=920 --gc_interval=100 index.prod.js"
+  },
+  "dependencies": {
+    "@cubejs-backend/postgres-driver": "^0.19.20",
+    "@cubejs-backend/server": "^0.19.21",
+    "@cubejs-client/core": "^0.19.22",
+    "cookie-parser": "^1.4.5",
+    "express-session": "^1.17.1",
+    "passport": "^0.4.1",
+    "passport-http": "^0.3.0"
+  }
+}
